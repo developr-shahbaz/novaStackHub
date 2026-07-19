@@ -1,0 +1,168 @@
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+body, html {
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #2b2b2b;
+    line-height: 1.6;
+    background: #fafafa;
+  }
+
+  a { color: inherit; }
+
+  /* ---------- Header / Nav ---------- */
+  header {
+    background: #1f2937;
+    color: #fff;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  header .logo {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  header nav a {
+    color: #d1d5db;
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 14px;
+  }
+
+  header nav a:hover {
+    color: #fff;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    background: #1f2937;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px 100px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    color: #cbd5e1;
+    max-width: 500px;
+    margin: 0 auto 24px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #3b82f6;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .btn:hover {
+    background: #2563eb;
+  }
+
+  /* ---------- Sections ---------- */
+  section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+
+  section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3b82f6;
+    display: inline-block;
+    padding-bottom: 6px;
+  }
+
+  #about p {
+    font-size: 16px;
+    color: #444;
+  }
+
+  /* ---------- Skills ---------- */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-top: 10px;
+  }
+
+  .skill-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .skill-card h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: #1f2937;
+  }
+
+  .skill-card p {
+    font-size: 13px;
+    color: #666;
+  }
+
+  /* ---------- Interests ---------- */
+  .interests-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .interests-list li {
+    background: #eef2ff;
+    color: #3730a3;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  /* ---------- Contact ---------- */
+  #contact p {
+    color: #444;
+    margin-bottom: 6px;
+  }
+
+  #contact a.email {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    text-align: center;
+    padding: 24px;
+    background: #1f2937;
+    color: #9ca3af;
+    font-size: 13px;
+  }
+
+  @media (max-width: 600px) {
+    header { flex-direction: column; gap: 10px; padding: 16px 20px; }
+    header nav a { margin: 0 10px; }
+    .hero h1 { font-size: 30px; }
+  }
